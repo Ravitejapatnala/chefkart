@@ -1,38 +1,452 @@
-.App {
+.headerContainer{
+  display: flex;
+  align-items: center;
+  gap: 25px;
+}
+
+.select{
+  font-weight: 500;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* popular */
+
+.black{
+  width: 100vw;
+  height: 50px;
+  background-color: black;
+}
+
+.dateAndTime{
+  display: flex;
+  height: fit-content;
+  width: 500px;
+  border-radius: 20px;
+  margin-top: -30px;
+  background-color: white;
+  margin-left: 380px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  justify-content: space-around;
+}
+
+.date, .time{
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 20px;
+}
+
+.line{
+  height: 40px;
+  border-left: 1px solid lightgray;
+  margin-top: 25px;
+}
+
+.dateText, .timeText{
+  font-size: medium;
+  font-weight: bold;
+}
+
+/* types */
+
+.types{
+  display: flex;
+  margin-top: 20px;
+}
+
+.cuisines{
+  width: 300px;
+  height: fit-content;
+  border-radius: 50px;
+  border: 1px solid lightgray;
+  color: lightgray;
+  padding: 5px;
+  margin: 10px;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.selected{
+  color: orange;
+  border: 2px solid orange;
+  background-color: #fff9f2;
+  font-weight: bold;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+h3{
+  padding-left: 20px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.dish{
+  border-radius: 50%;
+  color: white;
+  font-weight: 500;
+  height: 80px;
+  width: 80px;
+  background-image: url('https://t3.ftcdn.net/jpg/04/41/20/18/360_F_441201852_XQqp1wbAQj9udOC3iT7D0ahKgaf71bns.jpg');
+  background-position:right;
+  background-size: cover;
+  border: 5px solid orange;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+
+.dish1{
+  border: none;
+}
+
+.popular{
+  display: flex;
+  justify-content: space-around;
+}
+
+.hr{
+  border-bottom: 5px solid #f2f2f2;
+  margin-top: 10px;
+}
+
+.food-items{
+  z-index: 100;
+}
+
+/* recommended */
+
+body{
+  overflow-x: hidden;
+  margin: 0;
+  padding: 0;
+  overflow-y: hidden;
+}
+
+.recommended-items{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.dropdown{
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.menu{
+  background-color: black;
+  color: white;
+  font-weight: bold;
+  font-family: Arial, Helvetica, sans-serif;
+  padding-inline: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-radius: 5px;
+  border: none;
+}
+
+.item-details{
+  display: flex;
+  gap: 25px;
+  align-items: center;
+}
+
+.rating{
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  background-color: green;
+  color: white;
+  font-weight: bold;
+  border: none;
+  border-radius: 5px;
+  width: 50px;
+  height: 20px;
+  justify-content: center;
+  padding-inline: 5px;
+}
+
+.fridgeAndOven{
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.fridge, .oven{
+  text-align: center;
+}
+
+.vertical{
+  border-left: 1px solid lightgray;
+  height: 50px;
+  margin: 20px;
+}
+
+.equipment{
+  display: flex;
+}
+
+.view{
+  display: flex;
+  font-weight: bold;
+  color: orange;
+  cursor: pointer;
+  align-items: center;
+  gap: 3px;
+}
+
+.active{
+  color: orange;
+  cursor: pointer;
+  margin-top: 10px;
+  text-decoration: none;
+}
+
+.next{
+  margin-top: 10px;
+}
+
+.ingrediants>p{
+  font-weight: bold;
+
+}
+
+.description{
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 500;
+  color: #A9A9A9
+}
+
+.items{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin-top: 10px;
+}
+
+.item-image-1{
+  height: 120px;
+  width: 150px;
+  background-image: url('https://img.freepik.com/free-photo/top-view-delicious-corn-dog_23-2149387975.jpg');
+  background-position: center;
+  background-size: cover;
+  border-radius: 5px;
+}
+
+.item-image-2{
+  height: 120px;
+  width: 150px;
+  background-image: url('https://img.freepik.com/free-photo/vertical-shot-traditional-indian-paneer-butter-masala-cheese-cottage-curry-black-surface_181624-32001.jpg');
+  background-position: center;
+  background-size: cover;
+  border-radius: 5px;
+}
+
+.item-image-3{
+  height: 120px;
+  width: 150px;
+  background-image: url('https://t3.ftcdn.net/jpg/04/41/20/18/360_F_441201852_XQqp1wbAQj9udOC3iT7D0ahKgaf71bns.jpg');
+  background-position: center;
+  background-size: cover;
+  border-radius: 5px;
+}
+
+.item-image-4{
+  height: 120px;
+  width: 150px;
+  background-image: url('https://t4.ftcdn.net/jpg/02/03/06/45/360_F_203064510_mkerPoGGefI6JwajMaMoshbMwU6PFbhr.jpg');
+  background-position: center;
+  background-size: cover;
+  border-radius: 5px;
+}
+
+.item-image-5{
+  height: 120px;
+  width: 150px;
+  background-image: url('https://www.cookwithmanali.com/wp-content/uploads/2017/06/Veg-Kurma-500x500.jpg');
+  background-position: center;
+  background-size: cover;
+  border-radius: 5px;
+}
+
+.item-image-6{
+  height: 120px;
+  width: 150px;
+  background-image: url('https://www.shutterstock.com/image-photo/chicken-curry-masalakerala-style-using-600nw-1903754353.jpg');
+  background-position: center;
+  background-size: cover;
+  border-radius: 5px;
+}
+
+.item-right{
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+}
+
+.add{
+  border: 1px solid orange;
+  color: orange;
+  font-weight: bold;
+  width: fit-content;
+  height: fit-content;
+  background-color: #ffffff;
+  padding-inline: 30px;
+  padding-top: 3px;
+  padding-bottom: 3px;
+  border-radius: 5px;
+  margin-top: -10px;
+  cursor: pointer;
+}
+
+.scroll{
+  overflow-y: auto;
+  max-height: calc(100vh - 400px);
+  scrollbar-width: none;
+}
+
+.cart{
+  display: flex;
+  background-color: black;
   color: white;
+  font-weight: bold;
+  border: none;
+  border-radius: 5px;
+  justify-content: space-between;
+  width: 300px;
+  height: fit-content;
+  align-items: center;
+  position: fixed;
+  top: 550px;
+  bottom: 10px;
+  left: 40%;
+  right: 50%;
+  padding: 3px;
 }
 
-.App-link {
-  color: #61dafb;
+.cart-left{
+  display: flex;
+  gap: 10px;
+  align-items: center;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.extra-space{
+  height: 40px;
+}
+
+/* Media queries for tablets */
+@media screen and (max-width: 1024px) {
+  .dateAndTime {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
   }
-  to {
-    transform: rotate(360deg);
+
+  body{
+    overflow-y: scroll;
+  }
+  .types {
+    flex-wrap: wrap;
+  }
+  .cuisines {
+    width: 48%;
+  }
+  .items {
+    flex-direction: column;
+    gap: 20px;
+  }
+  .scroll {
+    max-height: calc(100vh - 300px);
+  }
+  .cart {
+    width: 90%;
+    left: 5%;
+    right: auto;
+    top: unset;
+    bottom: 10px;
+    margin: 0 auto;
+  }
+
+  .popular {
+    overflow-x: auto;
+    scrollbar-width: none;
+  }
+  .dish {
+    margin: 5px;
   }
 }
+
+/* Media queries for smartphones */
+@media screen and (max-width: 768px) {
+  .dateAndTime {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  body{
+    overflow-y: scroll;
+  }
+  
+  .types {
+    flex-wrap: wrap;
+  }
+  .cuisines {
+    width: 48%;
+  }
+  .items {
+    flex-direction: column;
+    gap: 20px;
+  }
+  .scroll {
+    max-height: calc(100vh - 250px);
+  }
+  .cart {
+    width: 90%;
+    left: 5%;
+    right: auto;
+    top: unset;
+    bottom: 10px;
+    margin: 0 auto;
+  }
+
+  .popular {
+    overflow-x: auto;
+  }
+  .dish {
+    margin: 5px;
+  }
+}
+
+/* Media queries for smaller smartphones */
+@media screen and (max-width: 480px) {
+  .dateAndTime, .types {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  body{
+    overflow-y: scroll;
+  }
+
+  .cuisines {
+    width: 90%;
+  }
+  .items {
+    flex-direction: column;
+    gap: 20px;
+  }
+  .scroll {
+    max-height: calc(100vh - 200px);
+  }
+  .cart {
+    width: 90%;
+    left: 5%;
+    right: auto;
+  }
+
+  .popular {
+    overflow-x: auto;
+  }
+}
+
+/* Dish details */
+
