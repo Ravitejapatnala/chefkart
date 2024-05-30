@@ -315,11 +315,9 @@ body{
   height: fit-content;
   align-items: center;
   position: fixed;
-  top: 550px;
-  bottom: 10px;
+  top: 560px;
   left: 40%;
-  right: 50%;
-  padding: 3px;
+  right: 50%; 
 }
 
 .cart-left{

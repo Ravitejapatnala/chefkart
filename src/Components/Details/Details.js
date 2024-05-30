@@ -5,12 +5,13 @@ import clock from "./images/clock.png";
 import vegetables from "./images/veg_new.jpg";
 import dropdown from "./images/drop-down-arrow.png";
 import refrigerator from "./images/—Pngtree—hand-painted refrigerator grey refrigerator hand_3906127.png";
+import { NavLink } from "react-router-dom";
 
 const Details=()=>{
     return(
         <div className="containerDetails">
             <div className="headerDetails">
-                <img src={left} alt="left" height='20px'></img>
+                <NavLink to='/'><img src={left} alt="left" height='20px'></img></NavLink>
 
                 <div className="hero-sectionDetails">
                     <div className="itemDetails">
